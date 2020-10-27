@@ -1,0 +1,20 @@
+.background-img .img-waves{
+
+
+}
+
+.img-waves{
+    margin: 0;
+    padding: 0;
+
+    background: url("../pics/hero-bg.svg") no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
