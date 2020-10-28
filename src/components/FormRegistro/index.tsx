@@ -23,6 +23,6 @@ const accountValidateShecma = Yup.object({
 })
 
 const FormRegistro =()=>{
-    return(<Formik initialValues={initialValues} onSubmit={}/>)
+    return(<h3>f</h3>)
 }
 export default FormRegistro;
