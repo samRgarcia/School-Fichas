@@ -10,11 +10,14 @@ const Modal =(props:any)=>{
     const handlOpen=()=>{
         props.setIsOpen(true);
     }
+    const handlClose=()=>{
+        props.setIsOpen(false);
+    }
 
 
     return(<>
         <a href="#" className="" onClick={handlOpen}>Registrarte</a>
-        <Dialog open={props.isOpen} >
+        <Dialog open={props.isOpen} onClose={handlClose} >
             <DialogTitle id="form-dialog-title">{props.Title}</DialogTitle>
             <DialogContent>
                 {props.children}

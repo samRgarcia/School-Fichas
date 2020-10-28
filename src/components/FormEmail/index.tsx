@@ -5,20 +5,21 @@ import './styles.css';
 
  const FormEmail= ()=>{
      const [isOpen,setIsOpen]=React.useState<boolean>(false);
-     const sendEmail =()=>{
+     const sendEmail =(evt:any)=>{
+         evt.preventDefault();
          console.log("sss")
          setIsOpen(false)
      }
 
     return(
         <ModalFancy setIsOpen={setIsOpen} isOpen={isOpen} Title="Registro">
-            <form className='form-email' >
+            <form onSubmit={sendEmail} className='form-email'  >
                 <label htmlFor="email">
                     <span>Ingrese un correo</span>
-                    <input type="email" name="email" id="email" autoComplete={"email"} />
+                    <input type="email" name="email" id="email" autoComplete={"email"} required placeholder={"escribe tu correo"} />
                 </label>
 
-                <button type="button" onClick={sendEmail} >Validar correo</button>
+                <button type="submit" >Validar correo</button>
             </form>
         </ModalFancy>
        )
