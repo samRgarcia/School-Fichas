@@ -18,7 +18,7 @@ import './styles.css';
                     <input type="email" name="email" id="email" autoComplete={"email"} />
                 </label>
 
-                <button  onClick={sendEmail} >Validar correo</button>
+                <button type="button" onClick={sendEmail} >Validar correo</button>
             </form>
         </ModalFancy>
        )

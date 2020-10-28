@@ -9,7 +9,7 @@ const Login =()=>{
     const history =useHistory();
 
     const validarUser=(evt:any)=>{
-        evt.preventDefault();
+        evt.preventDefault()
         history.replace('/dashboard')
     }
 
@@ -20,10 +20,10 @@ const Login =()=>{
                 <img className="avatar-login" src={Avatar} alt=""/>
             </figure>
             <h1>BIENVENIDO</h1>
-            <form onSubmit={validarUser}>
+            <form >
                 <TextField className="input-login" label="email" size={"small"} variant={"outlined"}/>
                 <TextField className="input-login" label="password" size={"small"} variant={"outlined"}/>
-            <input type="submit" value={"iniciar"}/>
+            <input type="submit" onClick={validarUser} value={"iniciar"}/>
                 <a href="#">Recuperar contraseña</a> <br/>
                 <a href="#"></a>
                 <RegistroEmail/>
