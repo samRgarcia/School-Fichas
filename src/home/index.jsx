@@ -8,7 +8,6 @@ const Home =()=>{
         <main>
            <section className="img-waves">
                <div className='container'>
-                    <h1>Obten tu ficha</h1>
                         <Login/>
                </div>
            </section>

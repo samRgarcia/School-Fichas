@@ -1,0 +1,71 @@
+.form-email{
+    width: 400px;
+}
+
+.form-email span{
+    margin: 0;
+    padding: 2px;
+    margin-bottom: 3px;
+    font-weight: bolder;
+    display: block;
+    font-size: small;
+
+}
+
+.form-email input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form-email input{
+    border: none;
+
+    background: #eeeeee;
+    outline: none;
+    height: 30px;
+    color: black;
+    font-size: 14px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.form-email button{
+    border: none;
+    outline: none;
+    height: 30px;
+    font-size: 12px;
+    background: #283773;
+    color: #eeeeee;
+    border-radius: 12px;
+cursor: pointer;
+    top: 0px;
+}
+
+.form-email button:disabled{
+    background: darkgray;
+}
+
+.form-email button:active{
+    box-shadow: 1px 1px 0 #6c6e6d;
+    top: 2px;
+}
+
+@media (max-width: 690px) {
+    .form-email input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-email{
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-email input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-email{
+        width: 200px;
+    }
+}
