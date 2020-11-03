@@ -10,7 +10,7 @@ const Login =()=>{
 
     const validarUser=(evt:any)=>{
         evt.preventDefault()
-        history.replace('/dashboard')
+        history.replace('/app')
     }
 
     return(
