@@ -21,9 +21,9 @@ const Login =()=>{
             </figure>
             <h1>BIENVENIDO</h1>
             <form >
-                <TextField className="input-login" label="email" size={"small"} variant={"outlined"}/>
-                <TextField className="input-login" label="password" size={"small"} variant={"outlined"}/>
-            <input type="submit" onClick={validarUser} value={"iniciar"}/>
+                <TextField className="input-login" label="Correo" size={"small"} variant={"outlined"}/>
+                <TextField className="input-login" label="Contraseña" size={"small"} variant={"outlined"}/>
+            <input type="submit" onClick={validarUser} value={"Iniciar"}/>
                 <a href="#">Recuperar contraseña</a> <br/>
                 <a href="#"></a>
                 <RegistroEmail/>

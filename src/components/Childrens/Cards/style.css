@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.box-card{
+    width: 50px;
+    background-color: #eeeeee;
+}
+.card-title{
+    font-size: 14px;
+}
+@media (max-width: 500px) {
+    .box-card{
+        width: 100%;
+        background-color: #eeeeee;
+    }
+}

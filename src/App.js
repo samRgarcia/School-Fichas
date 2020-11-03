@@ -9,7 +9,7 @@ import {BrowserRouter as Router,
     Route,
     Redirect
 } from 'react-router-dom'
-
+import FullDashboard from "./home/FullDashboard";
 function App() {
   return (
     <div>
@@ -27,6 +27,9 @@ function App() {
                 </Route>
                 <Route path='/ficha' exact>
                     <TramiteFicha/>
+                </Route>
+                <Route path='/app' exact>
+                    <FullDashboard/>
                 </Route>
                 <Redirect from="*" to="/login"/>
             </Switch>
