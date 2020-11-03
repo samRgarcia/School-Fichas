@@ -1,16 +1,17 @@
 import React from "react";
 import Card from "../Childrens/Cards";
+import {IconFicha,IconPay} from '../../estaticos/imgTree';
 import './ListModule.css';
 
 const ListModule=()=>{
     return(<section className='box-item_card'>
-        <Card color={"blue"} Title={'Fichas'}>
+        <Card path={IconFicha}  Title={'Fichas'}>
             <div>contenet</div>
         </Card>
-        <Card color={"red"} Title={'Pagos'}>
+        <Card path={IconPay}   Title={'Pagos'}>
             <div>contenet 2</div>
         </Card>
-        <Card color={"orange"} Title={'Reinscripciones'}>
+        <Card  Title={'Reinscripciones'}>
             <div>contenet 3</div>
         </Card>
 

@@ -7,7 +7,8 @@
 .box-item_card{
     display: flex;
     justify-content: space-around;
-    background-color: antiquewhite;
+    background-color: #f2f4fd;
+    overflow: auto;
 }
 
 
@@ -17,8 +18,6 @@
         justify-items: center;
         justify-content: center;
         flex-direction: column;
-
-
-        background-color: antiquewhite;
+        background-color: #f2f4fd;
     }
 }

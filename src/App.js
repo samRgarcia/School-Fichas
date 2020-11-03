@@ -8,7 +8,7 @@ import {BrowserRouter as Router,
     Switch,
     Route,
     Redirect
-} from 'react-router-dom'
+} from 'react-router-dom';
 import FullDashboard from "./home/FullDashboard";
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
                 <Route path='/login' exact>
                     <Home/>
                 </Route>
-                <Route path='/dashboard'>
-                      <Dashboard/>
+                <Route path='/app'>
+                      <FullDashboard/>
                 </Route>
                 <Route path='/inicio' exact>
                     <Reinscripcion/>
@@ -28,7 +28,7 @@ function App() {
                 <Route path='/ficha' exact>
                     <TramiteFicha/>
                 </Route>
-                <Route path='/app' exact>
+                <Route path='/app3' exact>
                     <FullDashboard/>
                 </Route>
                 <Redirect from="*" to="/login"/>

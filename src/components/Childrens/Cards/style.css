@@ -3,16 +3,41 @@
     margin: 0;
     padding: 0;
 }
+
+/*card*/
 .box-card{
-    width: 50px;
-    background-color: #eeeeee;
+    min-width: 200px;
+    border-radius: 5px;
+    margin: 8px;
+    background-color: #f9fafc;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.1)
 }
 .card-title{
-    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
 }
+.card-title p{
+    margin-left: 1px;
+    font-size: 18px;
+    color: #838b99;
+}
+.box-card figure img{
+    width: 40px;
+}
+.card-conteiner{
+    margin: 8px;
+}
+
+
+
+
+/*movil*/
 @media (max-width: 500px) {
     .box-card{
-        width: 100%;
-        background-color: #eeeeee;
+        width: 97%;
+        background-color: #f9fafc;
+        flex-flow: wrap;
     }
 }
