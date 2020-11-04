@@ -1,0 +1,38 @@
+.nav-menu{
+    margin: 0  auto;
+}
+
+.nav-menu>li{
+    float: left;
+    list-style: none;
+
+}
+.nav-menu li a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 10px;
+    display: block;
+}
+
+.nav-menu li{
+    float: left;
+    list-style: none;
+}
+.nav-menu li a:hover{
+    background-color:#434343;
+}
+
+.nav-menu li ul{
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav-menu li:hover > ul{
+    display: block;
+}
+
+.perfil{
+    border-radius: 50%;
+}
