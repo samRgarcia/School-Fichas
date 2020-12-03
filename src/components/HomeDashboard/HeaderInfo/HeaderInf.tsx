@@ -1,11 +1,10 @@
 import React,{useEffect} from "react";
 import { format,isAfter} from 'date-fns'
-import './HeaderInfo.css';
-import IconDay from '../../pics/sol.svg';
-import IconNight from '../../pics/luna.svg';
+import './styles/HeaderInfo.css';
+import IconDay from '../../../pics/sol.svg';
+import IconNight from '../../../pics/luna.svg';
 const data = new Date();
-const HORA = format(data,'pp')
-const FECHA = format(new Date(),'MM/dd/yyyy')
+        const FECHA = format(new Date(),'dd/MM/yyyy')
 
 const Intervale=()=> {
     const [date,setDate]=React.useState(new Date());

@@ -1,7 +1,7 @@
 import React from "react";
 import {TextField} from '@material-ui/core';
 import Avatar from "../../pics/avatar.svg";
-import './styles.css';
+import './styles/styles.css';
 import RegistroEmail from '../FormEmail';
 import {useHistory } from 'react-router-dom'
 

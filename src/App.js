@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./home";
+import Home from "./pages/login";
 import Dashboard from "./pages/Dashboard";
 import Reinscripcion from './pages/InitialForm';
 import TramiteFicha from './pages/TransactFicha';
@@ -9,7 +9,11 @@ import {BrowserRouter as Router,
     Route,
     Redirect
 } from 'react-router-dom';
-import FullDashboard from "./home/FullDashboard";
+import FullDashboard from "./pages/home/FullDashboard";
+import Fichas from "./components/Fichas";
+import ResinscripcionAdm from './components/Reinscripcion'
+import Preinscripcion from "./components/Preinscripcion";
+import Inscripcion from "./components/Inscripcion";
 function App() {
   return (
     <div>
@@ -30,6 +34,19 @@ function App() {
                 </Route>
                 <Route path='/app3' exact>
                     <FullDashboard/>
+                </Route>
+
+                <Route path='/Fichas' exact>
+                    <Fichas/>
+                </Route>
+                <Route path='/reinscripcion' exact>
+                    <ResinscripcionAdm/>
+                </Route>
+                <Route path='/preinscripcion' exact>
+                    <Preinscripcion/>
+                </Route>
+                <Route path='/inscripcion' exact>
+                    <Inscripcion/>
                 </Route>
                 <Redirect from="*" to="/login"/>
             </Switch>

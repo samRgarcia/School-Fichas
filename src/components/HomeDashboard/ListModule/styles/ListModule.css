@@ -5,9 +5,10 @@
 }
 
 .box-item_card{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #f2f4fd;
+    /*background-color: #f2f4fd;*/
     overflow: auto;
 }
 

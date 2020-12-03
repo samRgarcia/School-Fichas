@@ -18,7 +18,7 @@
 /*onclock*/
 .box-onclock{
     width: 100%;
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../../pics/baner.jpg') no-repeat center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../../../../pics/baner.jpg') no-repeat center;
     background-size: cover;
     color: #f6f6f6;
 }
