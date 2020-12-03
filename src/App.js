@@ -14,6 +14,9 @@ import Fichas from "./components/Fichas";
 import ResinscripcionAdm from './components/Reinscripcion'
 import Preinscripcion from "./components/Preinscripcion";
 import Inscripcion from "./components/Inscripcion";
+import Layout from "./components/Childrens/Layout";
+
+
 function App() {
   return (
     <div>
@@ -37,16 +40,24 @@ function App() {
                 </Route>
 
                 <Route path='/Fichas' exact>
-                    <Fichas/>
+                    <Layout title={'Inscripcion/Fichas'} isHeader={true}>
+                        <Fichas/>
+                    </Layout>
                 </Route>
                 <Route path='/reinscripcion' exact>
+                    <Layout title={'Inscripcion/Reinscripción'} isHeader={true}>
                     <ResinscripcionAdm/>
+                    </Layout>
                 </Route>
                 <Route path='/preinscripcion' exact>
-                    <Preinscripcion/>
+                    <Layout title={'Inscripcion/Preinscripción'} isHeader={true}>
+                        <Preinscripcion/>
+                    </Layout>
                 </Route>
                 <Route path='/inscripcion' exact>
+                    <Layout title={'Inscripcion/Inscripción'} isHeader={true}>
                     <Inscripcion/>
+                    </Layout>
                 </Route>
                 <Redirect from="*" to="/login"/>
             </Switch>

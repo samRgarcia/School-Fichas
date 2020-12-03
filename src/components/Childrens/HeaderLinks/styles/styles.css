@@ -1,0 +1,26 @@
+.header-links{
+    margin-top: 60px;
+    background-color: #6c6e6d;
+}
+.header-links ul{
+    display: flex;
+    padding: 2px;
+}
+.header-links ul li{
+    margin-left: 5px;
+    list-style: none;
+    color: white;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.header-links ul li:hover{
+    color: #283773;
+    background-color: #283773;
+    transition: 0.15s;
+
+}
+
+.header-links ul li:focus{
+    background-color: bisque;
+}
