@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/login";
-import Dashboard from "./pages/Dashboard";
+//import Dashboard from "./pages/Dashboard";
 import Reinscripcion from './pages/InitialForm';
 import TramiteFicha from './pages/TransactFicha';
 import {SideBarProvider } from './Provider/SideBarProvider';
