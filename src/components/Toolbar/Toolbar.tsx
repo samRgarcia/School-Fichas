@@ -10,8 +10,8 @@ const Toolbar=(props:any)=>{
         <nav className='toolbar_navigation'>
             <div className='toolbar_toggle-button'><DrawerToggleButton click={props.drawerClickHeandler}/></div>
             <div className='toolbar_logo' >
-                <a href='#'><Link to={'/app'}><HomeIcon/></Link></a>
-                <a href='#' style={{fontSize:'larger'}}>{props.title}</a>
+                <a href='#'><Link to={'/home'}><HomeIcon/></Link></a>
+                <a href='#' style={{fontSize:'smaller'}}>{props.title}</a>
             </div>
             <div className='spacer'/>
             <div className='toolbar_navigation-item'>

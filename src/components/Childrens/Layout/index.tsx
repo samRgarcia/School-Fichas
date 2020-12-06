@@ -3,9 +3,10 @@ import Toolbar from "../../Toolbar/Toolbar";
 import SideDrawer from "../../SideDrawer/SideDrawer";
 import Backdrop from "../../Backdrop/Backdrop";
 import HeaderLink from "../HeaderLinks";
+import './styles/styles.css';
 
 
-const Layout =({children,title,isHeader=false}:any)=>{
+const Layout =({children,title,isHeader=false,top}:any)=>{
     const [sideDrawerOpe,setSideDrawerOpe]=React.useState(false)
     let backdrop=null;
 
@@ -26,7 +27,7 @@ const Layout =({children,title,isHeader=false}:any)=>{
             <SideDrawer show={sideDrawerOpe}/>
             {backdrop}
             {isHeader ? <HeaderLink/>:null}
-            <main style={{maxWidth:'1657px', margin:'64px auto'}}>
+            <main className={'main-toolbar'} style={{margin:top}}>
                 {children}
             </main>
         </div>

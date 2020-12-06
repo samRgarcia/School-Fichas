@@ -13,6 +13,18 @@
 .box-inf{
     width: 100%;
     background-color: #c44a4a;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.box-inf Avatar{
+    margin-left: 5px;
+}
+
+
+.box-inf h3{
+    margin-left: 5px;
+    color: white;
 }
 
 /*onclock*/

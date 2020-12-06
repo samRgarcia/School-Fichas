@@ -26,7 +26,7 @@ function App() {
                 <Route path='/login' exact>
                     <Home/>
                 </Route>
-                <Route path='/app'>
+                <Route path='/home'>
                       <FullDashboard/>
                 </Route>
                 <Route path='/inicio' exact>
@@ -40,25 +40,25 @@ function App() {
                 </Route>
 
                 <Route path='/Fichas' exact>
-                    <Layout title={'Inscripcion/Fichas'} isHeader={true}>
+                    <Layout top={'0px auto'} title={'Inscripcion/Fichas'} isHeader={true}>
                         <Fichas/>
                     </Layout>
                 </Route>
                 <Route path='/reinscripcion' exact>
-                    <Layout title={'Inscripcion/Reinscripción'} isHeader={true}>
+                    <Layout top={'0px auto'} title={'Inscripcion/Reinscripción'} isHeader={true}>
                     <ResinscripcionAdm/>
                     </Layout>
                 </Route>
                 <Route path='/preinscripcion' exact>
-                    <Layout title={'Inscripcion/Preinscripción'} isHeader={true}>
+                    <Layout top={'0px auto'} title={'Inscripcion/Preinscripción'} isHeader={true}>
                         <Preinscripcion/>
                     </Layout>
                 </Route>
-                <Route path='/inscripcion' exact>
-                    <Layout title={'Inscripcion/Inscripción'} isHeader={true}>
+                <PrivateRouterUrl path='/inscripcion' exact>
+                    <Layout top={'0px auto'} title={'Inscripcion/Inscripción'} isHeader={true}>
                     <Inscripcion/>
                     </Layout>
-                </Route>
+                </PrivateRouterUrl>
                 <Redirect from="*" to="/login"/>
             </Switch>
         </Router>
@@ -67,4 +67,20 @@ function App() {
   );
 }
 
+function PrivateRouterUrl({children,...rest}) {
+    let auth= true
+    return(
+        <Route
+            {...rest}
+            render={({location})=>
+            auth ?(
+                children
+            ):(
+                <Redirect
+                    to={{pathname:"/login", state:{from:location}}}/>
+            )
+            }
+        />
+    )
+}
 export default App;

@@ -1,0 +1,12 @@
+.form-edit-info{
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+}
+
+.for-div-one{
+    display: flex;
+    justify-content: space-around;
+}

@@ -3,6 +3,7 @@ import { format,isAfter} from 'date-fns'
 import './styles/HeaderInfo.css';
 import IconDay from '../../../pics/sol.svg';
 import IconNight from '../../../pics/luna.svg';
+import {Avatar} from '@material-ui/core';
 const data = new Date();
         const FECHA = format(new Date(),'dd/MM/yyyy')
 
@@ -29,7 +30,10 @@ const StatusHora = isAfter(new Date(0,0,0, data.getHours(),data.getMinutes(),dat
 const HeaderInfo =()=>{
     return(
         <div className='header-container'>
-        <div className='box-inf'>info</div>
+        <div className='box-inf'>
+            <Avatar>H</Avatar>
+            <h3>DANIEL ANDRÉS CASTIBLANCO SALGADO</h3>
+        </div>
         <div className='box-onclock'>
             <div>
                 <figure>

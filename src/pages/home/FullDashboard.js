@@ -6,7 +6,7 @@ import Layout from "../../components/Childrens/Layout";
 const FullDashboard=()=>{
 
     return(
-        <Layout>
+        <Layout top={'64px auto'}>
             <HeaderInfo/>
            <ExpansionPanel title='Inscripción' description=''>
                <ListModule/>
