@@ -4,7 +4,7 @@ import Home from "./pages/login";
 import Reinscripcion from './pages/InitialForm';
 import TramiteFicha from './pages/TransactFicha';
 import {SideBarProvider } from './Provider/SideBarProvider';
-import {BrowserRouter as Router,
+import {HashRouter as Router,
     Switch,
     Route,
     Redirect
